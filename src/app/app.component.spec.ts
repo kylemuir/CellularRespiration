@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'CellularRespiration'`, () => {
+  it(`should have as title 'drag-drop'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('CellularRespiration');
+    expect(app.title).toEqual('drag-drop');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('CellularRespiration app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('drag-drop app is running!');
   });
 });
