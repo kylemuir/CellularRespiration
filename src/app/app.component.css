@@ -1,3 +1,45 @@
+#keybox {
+  list-style-type: none;
+  width: 90vh;
+  height: 30vh;
+  margin: 2px;
+  padding: 2px;
+  overflow: auto;
+  background-color: #89ffff;
+}
+#key1,#key2,#key3,#key4,#key5,#key6,#key7,#key8,#key9,#key10,#key11 {
+  float: left;
+  background-color: #e8b5ed;
+  display: inline-grid;
+  text-align: center;
+  width: 80px;
+  height: 80px;
+  margin: 3px;
+  padding: 3px;
+  text-decoration: none;
+}
+
+#draggable1,#draggable2,#draggable3,#draggable4,#draggable5,#draggable6,#draggable7,#draggable8,#draggable9,#draggable10,#draggable11 {
+  width : 80px;
+  height: 80px;
+}
+
+.rainbow-text {
+  background-image: repeating-linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red, violet);
+  text-align: left;
+  background-size: 800% 800%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 16px;
+  animation: rainbow 8s ease infinite;
+}
+
+@keyframes rainbow {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 25%}
+  100%{background-position:0% 50%}
+}
+
 #stagingArea {
   position: relative;
   height: 200px;
