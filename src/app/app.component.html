@@ -1,3 +1,64 @@
+<!--Start of keybox-->
+<h2>Key Box Demo</h2>
+<p class ="rainbow-text">Only "draggable" keys are stored here and can be placed in the "droppable" zones below</p>
+<ul id = "keybox">
+  <li id = "key1"><img
+    id = "draggable1"
+    draggable="true"
+    (dragstart)="drag($event)"
+    src="https://www.serebii.net/swordshield/pokemon/213.png"></li>
+  <li id = "key2"><img
+    id = "draggable2"
+    draggable="true"
+    (dragstart)="drag($event)"
+    src="https://www.serebii.net/swordshield/pokemon/202.png"></li>
+  <li id ="key3"><img
+    id = "draggable3"
+    draggable="true"
+    (dragstart)="drag($event)"
+    src="https://www.serebii.net/swordshield/pokemon/570.png"></li>
+  <li id = "key4"><img
+    id = "draggable4"
+    draggable="true"
+    (dragstart)="drag($event)"
+    src="https://www.serebii.net/swordshield/pokemon/673.png"></li>
+  <li id = "key5"><img
+    id = "draggable5"
+    draggable="true"
+    (dragstart)="drag($event)"
+    src="https://www.serebii.net/swordshield/pokemon/701.png"></li>
+  <li id = "key6"><img
+    id = "draggable6"
+    draggable="true"
+    (dragstart)="drag($event)"
+    src="https://www.serebii.net/swordshield/pokemon/771.png"></li>
+  <li id = "key7"><img
+    id = "draggable7"
+    draggable="true"
+    (dragstart)="drag($event)"
+    src="https://www.serebii.net/swordshield/pokemon/051.png"></li>
+  <li id = "key8"><img
+    id = "draggable8"
+    draggable="true"
+    (dragstart)="drag($event)"
+    src="https://www.serebii.net/swordshield/pokemon/054.png"></li>
+  <li id = "key9"><img
+    id = "draggable9"
+    draggable="true"
+    (dragstart)="drag($event)"
+    src="https://www.serebii.net/swordshield/pokemon/062.png"></li>
+  <li id = "key10"><img
+    id = "draggable10"
+    draggable="true"
+    (dragstart)="drag($event)"
+    src="https://www.serebii.net/swordshield/pokemon/056.png"></li>
+  <li id = "key11"><img
+    id = "draggable11"
+    draggable="true"
+    (dragstart)="drag($event)"
+    src="https://www.serebii.net/swordshield/pokemon/079.png"></li>
+</ul>
+<!--End of keybox-->
 <h2>Drag and Drop Demo</h2>
 <div  id="div1"
       (drop)="drop($event)"
@@ -37,7 +98,7 @@
      (dragover)="allowDrop($event)">
 
   <img
-    src="https://images.pexels.com/photos/658687/pexels-photo-658687.jpeg?auto=compress&cs=tinysrgb&h=350"
+    src="https://www.serebii.net/swordshield/pokemon/213.png"
     draggable="true"
     (dragstart)="drag($event)"
     id="drag2"
@@ -45,3 +106,4 @@
     height="80">
 
 </div>
+
