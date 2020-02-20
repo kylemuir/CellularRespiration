@@ -1,19 +1,161 @@
-#div1, #div2, #div3 {
-  float: none;
-  width: 80px;
-  height: 80px;
-  margin: 2px;
-  padding: 0px;
-  border: 0px solid lightgray;
-  background-color: #ededed;
+#stagingArea {
+  position: relative;
+  height: 200px;
+  background-color: lightgray;
+  margin-bottom: 25px;
 }
 
-#div4, #div5, #div6 {
+#container1 {
   float: left;
+  height: 410px;
+  width: 410px;
+  margin-right: 50px;
+  background-color: limegreen;
+}
+
+#container2 {
+  float: left;
+  height: 410px;
+  width: 700px;
+  background-color: maroon;
+}
+
+#div1, #div2, #div3, #div4, #div5, #div6,
+#div7, #div8, #div9, #div10, #div11, #div12 {
+  position: absolute;
   width: 80px;
   height: 80px;
   margin: 2px;
   padding: 0px;
   border: 0px solid lightgray;
-  background-color: #ededed;
+  background-color: green;
+}
+
+#b1, #b2, #b3, #b4, #b5, #b6, #b7, #b8, #b9, #b10, #b11 {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  margin: 2px;
+  padding: 0px;
+  border: 0px solid lightgray;
+  background-color: #700000;
+}
+
+/* TARGET POSITIONS */
+#container1 {
+  position: relative;
+}
+
+#container2 {
+  position: relative ;
+}
+
+#div1 {
+  top: 122px;
+  left: 0px;
+}
+#div2 {
+  top: 204px;
+  left: 0px;
+}
+#div3 {
+  top: 286px;
+  left: 0px;
+}
+#div4 {
+  top: 0px;
+  left: 82px;
+}
+#div5 {
+  top: 204px;
+  left: 82px;
+}
+#div6 {
+  top: 327px;
+  left: 82px;
+}
+
+#div7 {
+  top: 122px;
+  left: 123px;
+}
+
+#div8 {
+  top: 204px;
+  left: 164px;
+}
+
+#div9 {
+  top: 122px;
+  left: 205px;
+}
+
+#div10 {
+  top: 82px;
+  left: 327px;
+}
+
+#div11 {
+  top: 204px;
+  left: 327px;
+}
+
+#div12 {
+  top: 327px;
+  left: 327px;
+}
+
+#b1 {
+  top: 40px;
+  left: 0px;
+}
+
+#b2 {
+  top: 245px;
+  left: 0px;
+}
+
+#b3 {
+  top: 245px;
+  left: 204px;
+}
+
+#b4 {
+  top: 163px;
+  left: 327px;
+}
+
+#b5 {
+  top: 204px;
+  left: 409px;
+}
+
+#b6 {
+  top: 81px;
+  left: 491px;
+}
+
+#b7 {
+  top: 163px;
+  left: 491px;
+}
+
+#b8 {
+  top: 308px;
+  left: 491px;
+}
+
+#b9 {
+   top: 81px;
+   left: 610px;
+}
+
+#b10 {
+  top: 210px;
+  left: 610px;
+}
+
+#b11 {
+  top: 320px;
+  left: 610px;
 }
