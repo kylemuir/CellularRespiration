@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: white;
+  color: #333;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+	vertical-align: middle;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+
+.button {
+	position: relative;
+	display: inline-block;
+	width: 70px;
+	height: 30px;
+	border: none;
+	border-radius: 1rem;
+	color: white;
+}
+
+.box {
+    display: inline-block;
+    position: relative;
+    font-size: 10px ;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #333;
+  /* border-radius: 0.5rem; */
+    user-select: none;
+    cursor: move;
+    transition: 0.2s;
+    background-size: 100%;
+}
+.box span {
+  pointer-events: none;
+}
+
+.box:hover {
+  -ms-transform: scale(2.0); /* IE 9 */
+  -webkit-transform: scale(2.0); /* Safari 3-8 */
+  transform: scale(2.0); 
+}
+
+.box:active {
+  -ms-transform: scale(1.0); /* IE 9 */
+  -webkit-transform: scale(1.0); /* Safari 3-8 */
+  transform: scale(1.0); 
+}
+
+/* Drag and Drop Related Styling */
+
+.drag-start {
+  opacity: 0.4;
+}
+.drag-enter {
+  border-style: dashed;
+	transform: rotate(15deg);
+}
+.box:nth-child(odd).drag-start {
+  transform: scale(0.75);
+}
+.box:nth-child(even).drag-start {
+  transform: scale(0.75);
+}
+
+/*
+@media (max-width: 600px) {
+  html { 
+    font-size: 14px; 
+  }
+  .box {
+    width: 4rem; 
+    height: 4rem; 
+    font-size: 2rem;
+    margin: 0.5rem;
+  }
+}
+*/
+
+#container1 {
+	position: relative;
+	display: inline-block;
+	height: 400px;
+	width: 500px;
+	margin-top: 10px;
+}
+
+#container2 {
+	position: relative;
+	display: inline-block;
+	height: 400px;
+	width: 500px;
+	margin-top: 10px;
+}
+
+#stage {
+	position: relative;
+	text-align: center;
+	padding: 10px;
+	height: 140px;
+	width: 1000px;
+	background-color: #eee;
+}
+
+.rainbow-text {
+    background-image: repeating-linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red, violet);
+    text-align: center;
+    background-size: 80% 80%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 12px;
+    animation: rainbow 8s ease infinite;
+}
