@@ -97,7 +97,7 @@ function checkAnswers() {
     else {
         drp1.style.borderWidth = "thick";    drp1.style.borderStyle = "dotted";     drp1.style.borderColor = CBred;
     }
-	
+
     //DD 2
     let drp2 = document.getElementById("dd2");
     let drptext2 = drp2.options[drp2.selectedIndex].text; //grabs the selected text from drop down list
@@ -129,7 +129,7 @@ function checkAnswers() {
         // Spot 1 Wrong position
         img1a.style.borderWidth = "thick";    img1a.style.borderStyle = "dashed";    img1a.style.borderColor = CByellow;
     }
-	
+
     //SPOT 2
     let img2 = document.getElementById("ps2");
     if (document.getElementById("div2").contains(img2)) {
@@ -144,7 +144,7 @@ function checkAnswers() {
         // Spot 2 Wrong position
         img2.style.borderWidth = "thick";    img2.style.borderStyle = "dashed";    img2.style.borderColor = CByellow;
     }
-	
+
     //SPOT 3
     let img3 = document.getElementById("h20Split");
     if (document.getElementById("div3").contains(img3)) {
@@ -159,7 +159,7 @@ function checkAnswers() {
         // Spot 3 Wrong position
         img3.style.borderWidth = "thick";    img3.style.borderStyle = "dashed";    img3.style.borderColor = CByellow;
     }
-	
+
     //SPOT 4
     let img4a = document.getElementById("hydrogen1");
 	let img4b = document.getElementById("hydrogen2");
@@ -219,7 +219,7 @@ function checkAnswers() {
         // Spot 4 Wrong position
         img4a.style.borderWidth = "thick";    img4a.style.borderStyle = "dashed";    img4a.style.borderColor = CByellow;
     }
-	
+
     //SPOT 5
     let img5a = document.getElementById("electron1");
 	let img5b = document.getElementById("electron2");
@@ -239,7 +239,7 @@ function checkAnswers() {
         // Spot 5 Wrong position
         img5a.style.borderWidth = "thick";    img5a.style.borderStyle = "dashed";    img5a.style.borderColor = CByellow;
     }
-	
+
     //SPOT 6
     let img6a = document.getElementById("hydrogen2");
 	let img6b = document.getElementById("hydrogen1");
@@ -299,7 +299,7 @@ function checkAnswers() {
         // Spot 4 Wrong position
         img6a.style.borderWidth = "thick";    img6a.style.borderStyle = "dashed";    img6a.style.borderColor = CByellow;
     }
-	
+
     //SPOT 7
     let img7a = document.getElementById("light2");
 	let img7b = document.getElementById("light1");
@@ -318,7 +318,7 @@ function checkAnswers() {
         // Spot 7 Wrong position
         img7a.style.borderWidth = "thick";    img7a.style.borderStyle = "dashed";    img7a.style.borderColor = CByellow;
     }
-	
+
     //SPOT 8
     let img8 = document.getElementById("nadpTedactose");
     if (document.getElementById("div8").contains(img8)) {
@@ -333,7 +333,7 @@ function checkAnswers() {
         // Spot 8 Wrong position
         img8.style.borderWidth = "thick";    img8.style.borderStyle = "dashed";    img8.style.borderColor = CByellow;
     }
-	
+
     //SPOT 9
     let img9 = document.getElementById("ps1");
     if (document.getElementById("div9").contains(img9)) {
@@ -348,7 +348,7 @@ function checkAnswers() {
         // Spot 9 Wrong position
         img9.style.borderWidth = "thick";    img9.style.borderStyle = "dashed";    img9.style.borderColor = CByellow;
     }
-	
+
     //SPOT 10
     img4a = document.getElementById("hydrogen3");
 	img4b = document.getElementById("hydrogen2");
@@ -408,7 +408,7 @@ function checkAnswers() {
         // Spot 4 Wrong position
         img4a.style.borderWidth = "thick";    img4a.style.borderStyle = "dashed";    img4a.style.borderColor = CByellow;
     }
-	
+
     //SPOT 11
     let img11 = document.getElementById("atpSynthese1");
     if (document.getElementById("div11").contains(img11)) {
@@ -423,7 +423,7 @@ function checkAnswers() {
         // Spot 11 Wrong position
         img11.style.borderWidth = "thick";    img11.style.borderStyle = "dashed";    img11.style.borderColor = CByellow;
     }
-	
+
     //SPOT 12
     img4a = document.getElementById("hydrogen4");
 	img4b = document.getElementById("hydrogen2");
@@ -548,27 +548,6 @@ function checkAnswers() {
         document.getElementById("accoa").style.borderColor = CByellow;
     }
     //Animal Element 4
-    // id's hydrogen1 - hydrogen10
-	/* 
-    if (document.getElementById("a4").contains(document.getElementById("hydrogen1"))) {
-        // Spot 4 True
-        document.getElementById("imgA4").style.borderWidth = "thick";
-        document.getElementById("imgA4").style.borderStyle = "solid";
-        document.getElementById("imgA4").style.borderColor = CBgreen;
-    }
-    else if(document.getElementById("container1").contains(document.getElementById("imgA4"))) {
-        // Spot 4 Wrong organ
-        document.getElementById("imgA4").style.borderWidth = "thick";
-        document.getElementById("imgA4").style.borderStyle = "dotted";
-        document.getElementById("imgA4").style.borderColor = CBred;
-    }
-    else {
-        // Spot 4 False
-        document.getElementById("imgA4").style.borderWidth = "thick";
-        document.getElementById("imgA4").style.borderStyle = "dashed";
-        document.getElementById("imgA4").style.borderColor = CByellow;
-    }
-	*/
 	img4a = document.getElementById("hydrogen5");
 	img4b = document.getElementById("hydrogen2");
 	img4c = document.getElementById("hydrogen3");
@@ -627,16 +606,16 @@ function checkAnswers() {
         // Spot 4 Wrong position
         img4a.style.borderWidth = "thick";    img4a.style.borderStyle = "dashed";    img4a.style.borderColor = CByellow;
     }
-	
+
     //Animal Element 5
     // id complex1
-    if (document.getElementById("a5").contains(document.getElementById("coomplex1"))) {
+    if (document.getElementById("a5").contains(document.getElementById("complex1"))) {
         // Spot 5 True
         document.getElementById("complex1").style.borderWidth = "thick";
         document.getElementById("complex1").style.borderStyle = "solid";
         document.getElementById("complex1").style.borderColor = CBgreen;
     }
-    else if(document.getElementById("container1").contains(document.getElementById("imgA5"))) {
+    else if(document.getElementById("container1").contains(document.getElementById("complex1"))) {
         // Spot 5 Wrong organ
         document.getElementById("complex1").style.borderWidth = "thick";
         document.getElementById("complex1").style.borderStyle = "dotted";
@@ -648,28 +627,8 @@ function checkAnswers() {
         document.getElementById("complex1").style.borderStyle = "dashed";
         document.getElementById("complex1").style.borderColor = CByellow;
     }
+
     //Animal Element 6
-    // id's hydrogen1 - hydrogen10
-	/*
-    if (document.getElementById("a6").contains(document.getElementById("imgA6"))) {
-        // Spot 6 True
-        document.getElementById("imgA6").style.borderWidth = "thick";
-        document.getElementById("imgA6").style.borderStyle = "solid";
-        document.getElementById("imgA6").style.borderColor = CBgreen;
-    }
-    else if(document.getElementById("container1").contains(document.getElementById("imgA6"))) {
-        // Spot 6 Wrong organ
-        document.getElementById("imgA6").style.borderWidth = "thick";
-        document.getElementById("imgA6").style.borderStyle = "dotted";
-        document.getElementById("imgA6").style.borderColor = CBred;
-    }
-    else {
-        // Spot 6 False
-        document.getElementById("imgA6").style.borderWidth = "thick";
-        document.getElementById("imgA6").style.borderStyle = "dashed";
-        document.getElementById("imgA6").style.borderColor = CByellow;
-    }
-	*/
 	img4a = document.getElementById("hydrogen6");
 	img4b = document.getElementById("hydrogen2");
 	img4c = document.getElementById("hydrogen3");
@@ -728,7 +687,7 @@ function checkAnswers() {
         // Spot 4 Wrong position
         img4a.style.borderWidth = "thick";    img4a.style.borderStyle = "dashed";    img4a.style.borderColor = CByellow;
     }
-	
+
     //Animal Element 7
     // id electron1 or electron2
     if (document.getElementById("a7").contains(document.getElementById("electron1")) ||
@@ -751,37 +710,18 @@ function checkAnswers() {
         document.getElementById("electron2").style.borderColor = CByellow;
       }
     }
+
     //Animal Element 8
-	/*
-    if (document.getElementById("a8").contains(document.getElementById("imgA8"))) {
-        // Spot 8 True
-        document.getElementById("imgA8").style.borderWidth = "thick";
-        document.getElementById("imgA8").style.borderStyle = "solid";
-        document.getElementById("imgA8").style.borderColor = CBgreen;
-    }
-    else if(document.getElementById("container1").contains(document.getElementById("imgA8"))) {
-        // Spot 8 Wrong organ
-        document.getElementById("imgA8").style.borderWidth = "thick";
-        document.getElementById("imgA8").style.borderStyle = "dotted";
-        document.getElementById("imgA8").style.borderColor = CBred;
-    }
-    else {
-        // Spot 8 False
-        document.getElementById("imgA8").style.borderWidth = "thick";
-        document.getElementById("imgA8").style.borderStyle = "dashed";
-        document.getElementById("imgA8").style.borderColor = CByellow;
-    }
-	*/
-	img4a = document.getElementById("hydrogen6");
-	img4b = document.getElementById("hydrogen2");
-	img4c = document.getElementById("hydrogen3");
-	img4d = document.getElementById("hydrogen4");
-	img4e = document.getElementById("hydrogen5");
-	img4f = document.getElementById("hydrogen1");
-	img4g = document.getElementById("hydrogen7");
-	img4h = document.getElementById("hydrogen8");
-	img4i = document.getElementById("hydrogen9");
-	img4j = document.getElementById("hydrogen10");
+    img4a = document.getElementById("hydrogen6");
+    img4b = document.getElementById("hydrogen2");
+    img4c = document.getElementById("hydrogen3");
+    img4d = document.getElementById("hydrogen4");
+    img4e = document.getElementById("hydrogen5");
+    img4f = document.getElementById("hydrogen1");
+    img4g = document.getElementById("hydrogen7");
+    img4h = document.getElementById("hydrogen8");
+    img4i = document.getElementById("hydrogen9");
+    img4j = document.getElementById("hydrogen10");
     if (document.getElementById("a8").contains(img4a)) {
         // Spot 4 True
         img4a.style.borderWidth = "thick";    img4a.style.borderStyle = "solid";     img4a.style.borderColor = CBgreen;
@@ -830,57 +770,39 @@ function checkAnswers() {
         // Spot 4 Wrong position
         img4a.style.borderWidth = "thick";    img4a.style.borderStyle = "dashed";    img4a.style.borderColor = CByellow;
     }
-	
+
     //Animal Element 9
-    if (document.getElementById("a9").contains(document.getElementById("imgA9"))) {
+  //id complex4
+    if (document.getElementById("a9").contains(document.getElementById("complex4"))) {
         // Spot 9 True
-        document.getElementById("imgA9").style.borderWidth = "thick";
-        document.getElementById("imgA9").style.borderStyle = "solid";
-        document.getElementById("imgA9").style.borderColor = CBgreen;
+        document.getElementById("complex4").style.borderWidth = "thick";
+        document.getElementById("complex4").style.borderStyle = "solid";
+        document.getElementById("complex4").style.borderColor = CBgreen;
     }
-    else if(document.getElementById("container1").contains(document.getElementById("imgA9"))) {
+    else if(document.getElementById("container1").contains(document.getElementById("complex4"))) {
         // Spot 9 Wrong organ
-        document.getElementById("imgA9").style.borderWidth = "thick";
-        document.getElementById("imgA9").style.borderStyle = "dotted";
-        document.getElementById("imgA9").style.borderColor = CBred;
+        document.getElementById("complex4").style.borderWidth = "thick";
+        document.getElementById("complex4").style.borderStyle = "dotted";
+        document.getElementById("complex4").style.borderColor = CBred;
     }
     else {
         // Spot 9 False
-        document.getElementById("imgA9").style.borderWidth = "thick";
-        document.getElementById("imgA9").style.borderStyle = "dashed";
-        document.getElementById("imgA9").style.borderColor = CByellow;
+        document.getElementById("complex4").style.borderWidth = "thick";
+        document.getElementById("complex4").style.borderStyle = "dashed";
+        document.getElementById("complex4").style.borderColor = CByellow;
     }
-    //Animal Element 10
-	/*
-    if (document.getElementById("a10").contains(document.getElementById("imgA10"))) {
-        // Spot 10 True
-        document.getElementById("imgA10").style.borderWidth = "thick";
-        document.getElementById("imgA10").style.borderStyle = "solid";
-        document.getElementById("imgA10").style.borderColor = CBgreen;
-    }
-    else if(document.getElementById("container1").contains(document.getElementById("imgA10"))) {
-        // Spot 10 Wrong organ
-        document.getElementById("imgA10").style.borderWidth = "thick";
-        document.getElementById("imgA10").style.borderStyle = "dotted";
-        document.getElementById("imgA10").style.borderColor = CBred;
-    }
-    else {
-        // Spot 10 False
-        document.getElementById("imgA10").style.borderWidth = "thick";
-        document.getElementById("imgA10").style.borderStyle = "dashed";
-        document.getElementById("imgA10").style.borderColor = CByellow;
-    }
-	*/
-	img4a = document.getElementById("hydrogen8");
-	img4b = document.getElementById("hydrogen2");
-	img4c = document.getElementById("hydrogen3");
-	img4d = document.getElementById("hydrogen4");
-	img4e = document.getElementById("hydrogen5");
-	img4f = document.getElementById("hydrogen6");
-	img4g = document.getElementById("hydrogen7");
-	img4h = document.getElementById("hydrogen1");
-	img4i = document.getElementById("hydrogen9");
-	img4j = document.getElementById("hydrogen10");
+
+      //Animal Element 10
+    img4a = document.getElementById("hydrogen8");
+    img4b = document.getElementById("hydrogen2");
+    img4c = document.getElementById("hydrogen3");
+    img4d = document.getElementById("hydrogen4");
+    img4e = document.getElementById("hydrogen5");
+    img4f = document.getElementById("hydrogen6");
+    img4g = document.getElementById("hydrogen7");
+    img4h = document.getElementById("hydrogen1");
+    img4i = document.getElementById("hydrogen9");
+    img4j = document.getElementById("hydrogen10");
     if (document.getElementById("a10").contains(img4a)) {
         // Spot 4 True
         img4a.style.borderWidth = "thick";    img4a.style.borderStyle = "solid";     img4a.style.borderColor = CBgreen;
@@ -929,38 +851,75 @@ function checkAnswers() {
         // Spot 4 Wrong position
         img4a.style.borderWidth = "thick";    img4a.style.borderStyle = "dashed";    img4a.style.borderColor = CByellow;
     }
-	
+
     //Animal Element 11
-    if (document.getElementById("a11").contains(document.getElementById("imgA11"))) {
+  // id electron3
+    if (document.getElementById("a11").contains(document.getElementById("electron3"))) {
         // Spot 11 True
-        document.getElementById("imgA11").style.borderWidth = "thick";
-        document.getElementById("imgA11").style.borderStyle = "solid";
-        document.getElementById("imgA11").style.borderColor = CBgreen;
+        document.getElementById("electron3").style.borderWidth = "thick";
+        document.getElementById("electron3").style.borderStyle = "solid";
+        document.getElementById("electron3").style.borderColor = CBgreen;
     }
-    else if(document.getElementById("container1").contains(document.getElementById("imgA11"))) {
+    else if(document.getElementById("container1").contains(document.getElementById("electron3"))) {
         // Spot 11 Wrong organ
-        document.getElementById("imgA11").style.borderWidth = "thick";
-        document.getElementById("imgA11").style.borderStyle = "dotted";
-        document.getElementById("imgA11").style.borderColor = CBred;
+        document.getElementById("electron3").style.borderWidth = "thick";
+        document.getElementById("electron3").style.borderStyle = "dotted";
+        document.getElementById("electron3").style.borderColor = CBred;
     }
     else {
         // Spot 11 False
-        document.getElementById("imgA11").style.borderWidth = "thick";
-        document.getElementById("imgA11").style.borderStyle = "dashed";
-        document.getElementById("imgA11").style.borderColor = CByellow;
+        document.getElementById("electron3").style.borderWidth = "thick";
+        document.getElementById("electron3").style.borderStyle = "dashed";
+        document.getElementById("electron3").style.borderColor = CByellow;
     }
-	
-	//Animal Element 14
-	img4a = document.getElementById("hydrogen9");
-	img4b = document.getElementById("hydrogen2");
-	img4c = document.getElementById("hydrogen3");
-	img4d = document.getElementById("hydrogen4");
-	img4e = document.getElementById("hydrogen5");
-	img4f = document.getElementById("hydrogen6");
-	img4g = document.getElementById("hydrogen7");
-	img4h = document.getElementById("hydrogen8");
-	img4i = document.getElementById("hydrogen1");
-	img4j = document.getElementById("hydrogen10");
+
+    // Animal Element 12
+    // id h20Fuse
+    if (document.getElementById("a12").contains(document.getElementById("h20Fuse"))){
+        document.getElementById("h20Fuse").style.borderWidth = "thick";
+        document.getElementById("h20Fuse").style.borderStyle = "solid";
+        document.getElementById("h20Fuse").style.borderColor = CBgreen;
+  }
+    else if(document.getElementById("container1").contains(document.getElementById("h20Fuse"))){
+        document.getElementById("h20Fuse").style.borderWidth = "thick";
+        document.getElementById("h20Fuse").style.borderStyle = "dotted";
+        document.getElementById("h20Fuse").style.borderColor = CBred;
+    }
+    else{
+        document.getElementById("h20Fuse").style.borderWidth = "thick";
+        document.getElementById("h20Fuse").style.borderStyle = "solid";
+        document.getElementById("h20Fuse").style.borderColor = CByellow;
+  }
+  // Animal Element 13
+  // id tca
+  if (document.getElementById("a13").contains(document.getElementById("tca"))){
+    document.getElementById("tca").style.borderWidth = "thick";
+    document.getElementById("tca").style.borderStyle = "solid";
+    document.getElementById("tca").style.borderColor = CBgreen;
+  }
+  else if(document.getElementById("container1").contains(document.getElementById("tca"))){
+    document.getElementById("tca").style.borderWidth = "thick";
+    document.getElementById("tca").style.borderStyle = "dotted";
+    document.getElementById("tca").style.borderColor = CBred;
+  }
+  else{
+    document.getElementById("tca").style.borderWidth = "thick";
+    document.getElementById("tca").style.borderStyle = "solid";
+    document.getElementById("tca").style.borderColor = CByellow;
+  }
+
+    //Animal Element 14
+    // hydrogen 1 - 10
+    img4a = document.getElementById("hydrogen9");
+    img4b = document.getElementById("hydrogen2");
+    img4c = document.getElementById("hydrogen3");
+    img4d = document.getElementById("hydrogen4");
+    img4e = document.getElementById("hydrogen5");
+    img4f = document.getElementById("hydrogen6");
+    img4g = document.getElementById("hydrogen7");
+    img4h = document.getElementById("hydrogen8");
+    img4i = document.getElementById("hydrogen1");
+    img4j = document.getElementById("hydrogen10");
     if (document.getElementById("a14").contains(img4a)) {
         // Spot 4 True
         img4a.style.borderWidth = "thick";    img4a.style.borderStyle = "solid";     img4a.style.borderColor = CBgreen;
@@ -1009,18 +968,36 @@ function checkAnswers() {
         // Spot 4 Wrong position
         img4a.style.borderWidth = "thick";    img4a.style.borderStyle = "dashed";    img4a.style.borderColor = CByellow;
     }
-	
-	//Animal Element 16
-	img4a = document.getElementById("hydrogen10");
-	img4b = document.getElementById("hydrogen2");
-	img4c = document.getElementById("hydrogen3");
-	img4d = document.getElementById("hydrogen4");
-	img4e = document.getElementById("hydrogen5");
-	img4f = document.getElementById("hydrogen6");
-	img4g = document.getElementById("hydrogen7");
-	img4h = document.getElementById("hydrogen8");
-	img4i = document.getElementById("hydrogen9");
-	img4j = document.getElementById("hydrogen1");
+
+  // Animal Element 15
+  // id atpSynthese2
+  if (document.getElementById("a15").contains(document.getElementById("atpSynthese2"))){
+    document.getElementById("atpSynthese2").style.borderWidth = "thick";
+    document.getElementById("atpSynthese2").style.borderStyle = "solid";
+    document.getElementById("atpSynthese2").style.borderColor = CBgreen;
+  }
+  else if(document.getElementById("container1").contains(document.getElementById("atpSynthese2"))){
+    document.getElementById("atpSynthese2").style.borderWidth = "thick";
+    document.getElementById("atpSynthese2").style.borderStyle = "dotted";
+    document.getElementById("atpSynthese2").style.borderColor = CBred;
+  }
+  else{
+    document.getElementById("atpSynthese2").style.borderWidth = "thick";
+    document.getElementById("atpSynthese2").style.borderStyle = "solid";
+    document.getElementById("atpSynthese2").style.borderColor = CByellow;
+  }
+
+	  //Animal Element 16
+    img4a = document.getElementById("hydrogen10");
+    img4b = document.getElementById("hydrogen2");
+    img4c = document.getElementById("hydrogen3");
+    img4d = document.getElementById("hydrogen4");
+    img4e = document.getElementById("hydrogen5");
+    img4f = document.getElementById("hydrogen6");
+    img4g = document.getElementById("hydrogen7");
+    img4h = document.getElementById("hydrogen8");
+    img4i = document.getElementById("hydrogen9");
+    img4j = document.getElementById("hydrogen1");
     if (document.getElementById("a16").contains(img4a)) {
         // Spot 4 True
         img4a.style.borderWidth = "thick";    img4a.style.borderStyle = "solid";     img4a.style.borderColor = CBgreen;
@@ -1069,41 +1046,77 @@ function checkAnswers() {
         // Spot 4 Wrong position
         img4a.style.borderWidth = "thick";    img4a.style.borderStyle = "dashed";    img4a.style.borderColor = CByellow;
     }
-	
+
     // Animal Input Text Boxes
     // Getting the values:
-    var inputText1 = document.getElementById("textA1").value();
-    var inputText2 = document.getElementById("textA2").value();
-    var inputText3 = document.getElementById("textA3").value();
-    // textA1 should have the string Lion
+    var inputText1 = document.getElementById("textA1").value;
+    var inputText2 = document.getElementById("textA2").value;
+    var inputText3 = document.getElementById("textA3").value;
 
-    let textboxA1  = document.getElementById("textA1");
-    if (inputText1 === "Lion") {
+    // The array for the multiple answers text box  1.
+    var txt1array = [ "mitochondrial membrane",
+      "Mitochondrial Membrane",
+      "MITOCHONDRIAL MEMBRANE",
+      "Mitochondrial membrane",
+      "mitochondrial Membrane",
+      "mitochondrial membran",
+      "mitochondrialmembrane",
+      "MITOCHONDRIALMEMBRANE"];
+    let array1Size = txt1array.length;
+    let textboxA1 = document.getElementById("textA1");
+    var i;
+    var true1 = 0;
+    for(i = 0; i < array1Size; i++){
+      if(inputText1 === txt1array[i]){
         textboxA1.style.borderWidth = "thick";  textboxA1.style.borderStyle = "solid";  textboxA1.style.borderColor = CBgreen;
+        true1 = 1;
+        break;
+      }
     }
-    else {
-        // alert("Word1 False");
-        textboxA1.style.borderWidth = "thick";    textboxA1.style.borderStyle = "dotted";    textboxA1.style.borderColor = CBred;
+    if (true1 === 0){
+      textboxA1.style.borderWidth = "thick";    textboxA1.style.borderStyle = "dotted";    textboxA1.style.borderColor = CBred;
     }
-    // textA2 should have the string Penguin
-    let textboxA2  = document.getElementById("textA2");
-    if (inputText2 === "Penguin") {
-        // alert("Word2 True");
+
+    // The array for the multiple answers text box 2.
+    var txt2array = [ "matrix", "Matrix", "MATRIX"];
+    var array2Size = txt2array.length;
+    let textboxA2 = document.getElementById("textA2");
+    var j;
+    var true2 = 0;
+    for(j = 0; j < array2Size; j++){
+      if(inputText2 === txt2array[j]){
         textboxA2.style.borderWidth = "thick";  textboxA2.style.borderStyle = "solid";  textboxA2.style.borderColor = CBgreen;
+        true2 = 1;
+        break;
+      }
     }
-    else {
-        // alert("Word2 False");
-        textboxA2.style.borderWidth = "thick";    textboxA2.style.borderStyle = "dotted";    textboxA2.style.borderColor = CBred;
+    if (true2 === 0){
+      textboxA2.style.borderWidth = "thick";    textboxA2.style.borderStyle = "dotted";    textboxA2.style.borderColor = CBred;
     }
-    // textA3  should have the string TigerKing
-    let textboxA3  = document.getElementById("textA3");
-    if (inputText3 === "TigerKing") {
-        // alert("Word2 True");
+
+    // The array for the multiple answers text box 2.
+    var txt3array = [ "intermembrane space",
+        "Intermembrane Space",
+        "Intermembrane space",
+        "INTERMEMBRANE SPACE",
+        "intermembrane Space",
+        "intermembranespace",
+        "IntermembraneSpace",
+        "Intermembranespace",
+        "INTERMEMBRANESPACE"];
+    var array3Size = txt3array.length;
+    let textboxA3 = document.getElementById("textA3");
+    var k;
+    var true3 = 0;
+    for(k = 0; k < array3Size; k++){
+      if(inputText3 === txt3array[k]){
         textboxA3.style.borderWidth = "thick";  textboxA3.style.borderStyle = "solid";  textboxA3.style.borderColor = CBgreen;
+        true3 = 1;
+        break;
+      }
     }
-    else {
-        // alert("Word2 False");
-        textboxA3.style.borderWidth = "thick";    textboxA3.style.borderStyle = "dotted";    textboxA3.style.borderColor = CBred;
+    if (true3 === 0){
+      textboxA3.style.borderWidth = "thick";    textboxA3.style.borderStyle = "dotted";    textboxA3.style.borderColor = CBred;
     }
 
     // Error Checking Drop Down & Select (Animal Cell)
