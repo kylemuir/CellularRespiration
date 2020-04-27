@@ -52,38 +52,44 @@ function checkAnswers() {
     // Plant Cell Answer Checks
     //
     //TEXT 1
-    let word1 = document.getElementById("textP1").value;
-    let textbox1 = document.getElementById("textP1");
-    if (word1 === "test1") {
-        // alert("Word1 True");
-        textbox1.style.borderWidth = "thick";    textbox1.style.borderStyle = "solid";     textbox1.style.borderColor = CBgreen;
-    }
-    else {
-        // alert("Word1 False");
-        textbox1.style.borderWidth = "thick";    textbox1.style.borderStyle = "dotted";    textbox1.style.borderColor = CBred;
-    }
+	var plant1array = ["thylakoid membrane",
+      "Thylakoid Membrane",
+      "Thylakoid membrane",
+      "thylakoid Membrane",
+      "THYLAKOID MEMBRANE"];
+	console.log(plant1array[0]);
+	var plant1ans = document.getElementById("textP1").value;
+	if (plant1array.includes(plant1ans)) {
+		document.getElementById("textP1").style.borderWidth = "thick";   document.getElementById("textP1").style.borderStyle = "solid";     document.getElementById("textP1").style.borderColor = CBgreen;
+	}
+	else {
+		document.getElementById("textP1").style.borderWidth = "thick";   document.getElementById("textP1").style.borderStyle = "dotted";     document.getElementById("textP1").style.borderColor = CBred;
+	}
+	
     //TEXT 2
-    let word2 = document.getElementById("textP2").value;
-    let textbox2 = document.getElementById("textP2");
-    if (word2 === "test2") {
-        // alert("Word2 True");
-        textbox2.style.borderWidth = "thick";    textbox2.style.borderStyle = "solid";     textbox2.style.borderColor = CBgreen;
-    }
-    else {
-        // alert("Word2 False");
-        textbox2.style.borderWidth = "thick";    textbox2.style.borderStyle = "dotted";    textbox2.style.borderColor = CBred;
-    }
+    var plant2array = ["stroma",
+      "Stroma",
+      "STROMA"];
+	var plant2ans = document.getElementById("textP2").value;
+	if (plant2array.includes(plant2ans)) {
+		document.getElementById("textP2").style.borderWidth = "thick";   document.getElementById("textP2").style.borderStyle = "solid";     document.getElementById("textP2").style.borderColor = CBgreen;
+	}
+	else {
+		document.getElementById("textP2").style.borderWidth = "thick";   document.getElementById("textP2").style.borderStyle = "dotted";     document.getElementById("textP2").style.borderColor = CBred;
+	}
+	
     //TEXT 3
-    let word3 = document.getElementById("textP3").value;
-    let textbox3 = document.getElementById("textP3");
-    if (word3 === "test3") {
-        // alert("Word3 True");
-        textbox3.style.borderWidth = "thick";    textbox3.style.borderStyle = "solid";     textbox3.style.borderColor = CBgreen;
-    }
-    else {
-        // alert("Word3 False");
-        textbox3.style.borderWidth = "thick";    textbox3.style.borderStyle = "dotted";    textbox3.style.borderColor = CBred;
-    }
+     var plant3array = ["thylakoid lumen",
+      "Thylakoid Lumen",
+      "THYLAKOID LUMEN",
+	  "lumen", "Lumen", "LUMEN"];
+	var plant3ans = document.getElementById("textP3").value;
+	if (plant3array.includes(plant3ans)) {
+		document.getElementById("textP3").style.borderWidth = "thick";   document.getElementById("textP3").style.borderStyle = "solid";     document.getElementById("textP3").style.borderColor = CBgreen;
+	}
+	else {
+		document.getElementById("textP3").style.borderWidth = "thick";   document.getElementById("textP3").style.borderStyle = "dotted";     document.getElementById("textP3").style.borderColor = CBred;
+	}
 
     //PLANT DROPDOWN
     //DD 1
@@ -285,7 +291,7 @@ function checkAnswers() {
     }
 	else if (document.getElementById("div6").contains(img6i)) {
         // Spot 4 True
-        img6i.style.borderWidth = "thick";    iimg6i.style.borderStyle = "solid";     img6i.style.borderColor = CBgreen;
+        img6i.style.borderWidth = "thick";    img6i.style.borderStyle = "solid";     img6i.style.borderColor = CBgreen;
     }
 	else if (document.getElementById("div6").contains(img6j)) {
         // Spot 4 True
@@ -690,25 +696,24 @@ function checkAnswers() {
 
     //Animal Element 7
     // id electron1 or electron2
-    if (document.getElementById("a7").contains(document.getElementById("electron1")) ||
-      document.getElementById("a7").contains(document.getElementById("electron2"))) {
+	imgA7a = document.getElementById("electron2");
+	imgA7b = document.getElementById("electron1");
+    if (document.getElementById("a7").contains(imgA7a)) {
         // Spot 7 True
-        document.getElementById("imgA7").style.borderWidth = "thick";
-        document.getElementById("imgA7").style.borderStyle = "solid";
-        document.getElementById("imgA7").style.borderColor = CBgreen;
+        imgA7a.style.borderWidth = "thick";
+        imgA7a.style.borderStyle = "solid";
+        imgA7a.style.borderColor = CBgreen;
     }
+	else if (document.getElementById("a7").contains(imgA7b)) {
+		imgA7b.style.borderWidth = "thick";
+        imgA7b.style.borderStyle = "solid";
+        imgA7b.style.borderColor = CBgreen;
+	}
     else {
-      // If electron 1 is in the animal cell but in the wrong spot
-      if(document.getElementById("container2").contains(document.getElementById("electron1"))) {
-        document.getElementById("electron1").style.borderWidth = "thick";
-        document.getElementById("electron1").style.borderStyle = "dashed";
-        document.getElementById("electron1").style.borderColor = CByellow;
-      }
-      if(document.getElementById("container2").contains(document.getElementById("electron2"))) {
-        document.getElementById("electron2").style.borderWidth = "thick";
-        document.getElementById("electron2").style.borderStyle = "dashed";
-        document.getElementById("electron2").style.borderColor = CByellow;
-      }
+      // If electron 1 is in the animal cell but in the wrong spot{
+        imgA7a.style.borderWidth = "thick";
+        imgA7a.style.borderStyle = "dashed";
+        imgA7a.style.borderColor = CByellow;
     }
 
     //Animal Element 8
