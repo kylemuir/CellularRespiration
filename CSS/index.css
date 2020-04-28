@@ -1,0 +1,104 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: white;
+  color: #333;
+  height: 100vh;
+  /*display: flex;*/
+  /*justify-content: center;*/
+  /*align-items: center;*/
+}
+
+.div1 {
+  width: 800px;
+  padding: 5px 10px 0px 10px;
+  background-color: #eeeeee;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*Tutorial css area*/
+.grid {
+  display: grid;
+  grid-template-columns: 60px 60px 60px;
+  grid-gap: 35px;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+.grid > div {
+  /*background: #f92532;*/
+  /*padding: 60px;*/
+  /*border-radius: 1rem;*/
+  background-size: 100%;
+  justify-content: center;
+}
+
+#tutText {
+  padding: 0px 10px 5px 0px;
+  margin: 0 auto;
+  width: 310px;
+  background-color: #eeeeee;
+  /*align: center;*/
+  text-align: center;
+}
+
+/*Style sheet for Boxes on drag/drop*/
+.box {
+  display: inline-block;
+  position: relative;
+  font-size: 10px ;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #333;
+  /* border-radius: 0.5rem; */
+  user-select: none;
+  cursor: move;
+  transition: 0.2s;
+  background-size: 100%;
+}
+.box span {
+  pointer-events: none;
+}
+
+.box:hover {
+  -ms-transform: scale(2.0); /* IE 9 */
+  -webkit-transform: scale(2.0); /* Safari 3-8 */
+  transform: scale(2.0);
+}
+
+.box:active {
+  -ms-transform: scale(1.0); /* IE 9 */
+  -webkit-transform: scale(1.0); /* Safari 3-8 */
+  transform: scale(1.0);
+}
+
+/* Drag and Drop Related Styling */
+
+.drag-start {
+  opacity: 0.4;
+}
+.drag-enter {
+  border-style: dashed;
+  transform: rotate(15deg);
+}
+.box:nth-child(odd).drag-start {
+  transform: scale(0.75);
+}
+.box:nth-child(even).drag-start {
+  transform: scale(0.75);
+}
+/*End of boxes*/
+
+header {
+  background-color: #eee;
+  background-size: cover;
+}
+
+.button {
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  height: 30px;
+  border: none;
+  border-radius: 1rem;
+  color: white;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="CSS/index.css">
+</head>
+<body>
+<div class="div1">
+    <h1 style="color: #276eb1">Cellular Metabolism App</h1>
+  <h3>Use the space below to see how our app works before jumping in</h3>
+  <ol style="padding: 15px; text-align: left; color: #276eb1;">
+    <li>Placing the mouse over an element will expand it for easier viewing</li>
+    <br>
+    <li>Click on the elements below to start dragging them</li>
+    <br>
+    <li>While dragging place it over another element and release to swap the two elements</li>
+    <br>
+    <li>If an element can be placed the item will visual rotate/tilt so you can tell it's droppable</li>
+    <br>
+    <li>If an element is dropped outside of acceptable zones it will return to previous position</li>
+  </ol>
+</div>
+ <div class="grid" style="padding-top: 30px">
+   <div class="box" id="tut1" draggable="true"
+        style="width: 60px; height: 60px; background-image: url('images/atpSythese2.png');"><span></span>
+   </div>
+
+   <div class="box" id="tut2" draggable="true"
+        style="width: 60px; height: 60px; background-image: url('images/electron.png');"><span></span>
+   </div>
+
+   <div class="box" id="tut3" draggable="true"
+        style="width: 60px; height: 60px; background-image: url('images/hydrogen.png');"><span></span>
+   </div>
+
+   <div class="box" id="tut4" draggable="true"
+        style="width: 60px; height: 60px; background-image: url('images/accoa.png');"><span></span>
+   </div>
+
+   <div class="box" id="tut5" draggable="true"
+        style="width: 60px; height: 60px; background-image: url('images/light.png');"><span></span>
+   </div>
+
+   <div class="box" id="tut6" draggable="true"
+        style="width: 60px; height: 60px; background-image: url('images/nadpTedactose.png');"><span></span>
+   </div>
+ </div>
+
+<div id="tutText">
+  <p>Click start to enter app</p>
+  <div>
+    <a href="main.html">
+      <button class="button" id="startApp" style="background-color:#276eb1; margin: 0 auto;">Start App</button>
+    </a>
+  </div>
+</div>
+<!--Tutorial grid box for user to have some instructions of how our app works-->
+<footer style="margin: 0 auto; padding: 0px 10px 0px 10px; text-align: center;">
+  <p>App created by:<br> Brayan Rodriguez, Kyle Muir, Skyler Loftus</p>
+</footer>
+
+<script src="js/dnd.js"></script>
+</body>
+</html>
