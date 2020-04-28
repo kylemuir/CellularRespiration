@@ -57,7 +57,7 @@ function checkAnswers() {
       "Thylakoid membrane",
       "thylakoid Membrane",
       "THYLAKOID MEMBRANE"];
-	console.log(plant1array[0]);
+	// -> console.log(plant1array[0]);
 	var plant1ans = document.getElementById("textP1").value;
 	if (plant1array.includes(plant1ans)) {
 		document.getElementById("textP1").style.borderWidth = "thick";   document.getElementById("textP1").style.borderStyle = "solid";     document.getElementById("textP1").style.borderColor = CBgreen;
@@ -65,7 +65,7 @@ function checkAnswers() {
 	else {
 		document.getElementById("textP1").style.borderWidth = "thick";   document.getElementById("textP1").style.borderStyle = "dotted";     document.getElementById("textP1").style.borderColor = CBred;
 	}
-	
+
     //TEXT 2
     var plant2array = ["stroma",
       "Stroma",
@@ -77,7 +77,7 @@ function checkAnswers() {
 	else {
 		document.getElementById("textP2").style.borderWidth = "thick";   document.getElementById("textP2").style.borderStyle = "dotted";     document.getElementById("textP2").style.borderColor = CBred;
 	}
-	
+
     //TEXT 3
      var plant3array = ["thylakoid lumen",
       "Thylakoid Lumen",
@@ -1059,14 +1059,16 @@ function checkAnswers() {
     var inputText3 = document.getElementById("textA3").value;
 
     // The array for the multiple answers text box  1.
-    var txt1array = [ "mitochondrial membrane",
-      "Mitochondrial Membrane",
-      "MITOCHONDRIAL MEMBRANE",
-      "Mitochondrial membrane",
-      "mitochondrial Membrane",
-      "mitochondrial membran",
-      "mitochondrialmembrane",
-      "MITOCHONDRIALMEMBRANE"];
+    var txt1array = [ "Inner Membrane",
+        "Inner membrane",
+        "inner membrane",
+        "inner Membrane",
+        "InnerMembrane",
+        "innermembrane",
+        "INNERMEMBRANE",
+        "innerMembrane",
+        "Innermembrane",
+        ];
     let array1Size = txt1array.length;
     let textboxA1 = document.getElementById("textA1");
     var i;
@@ -1106,9 +1108,12 @@ function checkAnswers() {
         "INTERMEMBRANE SPACE",
         "intermembrane Space",
         "intermembranespace",
+        "interMembrane",
         "IntermembraneSpace",
         "Intermembranespace",
-        "INTERMEMBRANESPACE"];
+        "INTERMEMBRANESPACE",
+        "Inter Membrane Space",
+        "inter membrane space"];
     var array3Size = txt3array.length;
     let textboxA3 = document.getElementById("textA3");
     var k;
