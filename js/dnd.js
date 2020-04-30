@@ -52,7 +52,7 @@ function checkAnswers() {
     // Plant Cell Answer Checks
     //
     //TEXT 1
-	var plant1array = ["thylakoid membrane"];
+	var plant1array = ["thylakoid membrane", "thylakoidmembrane", "thylakoid-membrane"];
 	// -> console.log(plant1array[0]);
 	var plant1ans = document.getElementById("textP1").value.toLowerCase();
 	if (plant1array.includes(plant1ans)) {
@@ -73,7 +73,7 @@ function checkAnswers() {
 	}
 
     //TEXT 3
-     var plant3array = ["thylakoid lumen", "lumen"];
+     var plant3array = ["thylakoid lumen", "lumen", "thylakoidlumen", "thylakoid-lumen"];
 	var plant3ans = document.getElementById("textP3").value.toLowerCase();
 	if (plant3array.includes(plant3ans)) {
 		document.getElementById("textP3").style.borderWidth = "thick";   document.getElementById("textP3").style.borderStyle = "solid";     document.getElementById("textP3").style.borderColor = CBgreen;
@@ -638,7 +638,8 @@ function checkAnswers() {
     // The array for the multiple answers text box  1.
     var txt1array = [
         "inner membrane",
-        "innermembrane"
+        "innermembrane",
+        "inner-membrane"
         ];
     let array1Size = txt1array.length;
     let textboxA1 = document.getElementById("textA1");
@@ -675,8 +676,11 @@ function checkAnswers() {
     // The array for the multiple answers text box 2.
     var txt3array = [ "intermembrane space",
         "intermembranespace",
-        "intermembrane",
-        "inter membrane space"];
+        "inter membrane space",
+        "inter membranespace",
+        "inter-membranespace",
+        "intermembrane-space",
+        "inter-membrane-space"];
     var array3Size = txt3array.length;
     let textboxA3 = document.getElementById("textA3");
     var k;
