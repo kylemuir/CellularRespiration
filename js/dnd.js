@@ -52,13 +52,9 @@ function checkAnswers() {
     // Plant Cell Answer Checks
     //
     //TEXT 1
-	var plant1array = ["thylakoid membrane",
-      "Thylakoid Membrane",
-      "Thylakoid membrane",
-      "thylakoid Membrane",
-      "THYLAKOID MEMBRANE"];
+	var plant1array = ["thylakoid membrane"];
 	// -> console.log(plant1array[0]);
-	var plant1ans = document.getElementById("textP1").value;
+	var plant1ans = document.getElementById("textP1").value.toLowerCase();
 	if (plant1array.includes(plant1ans)) {
 		document.getElementById("textP1").style.borderWidth = "thick";   document.getElementById("textP1").style.borderStyle = "solid";     document.getElementById("textP1").style.borderColor = CBgreen;
 	}
@@ -67,10 +63,8 @@ function checkAnswers() {
 	}
 
     //TEXT 2
-    var plant2array = ["stroma",
-      "Stroma",
-      "STROMA"];
-	var plant2ans = document.getElementById("textP2").value;
+    var plant2array = ["stroma"];
+	var plant2ans = document.getElementById("textP2").value.toLowerCase();
 	if (plant2array.includes(plant2ans)) {
 		document.getElementById("textP2").style.borderWidth = "thick";   document.getElementById("textP2").style.borderStyle = "solid";     document.getElementById("textP2").style.borderColor = CBgreen;
 	}
@@ -79,11 +73,8 @@ function checkAnswers() {
 	}
 
     //TEXT 3
-     var plant3array = ["thylakoid lumen",
-      "Thylakoid Lumen",
-      "THYLAKOID LUMEN",
-	  "lumen", "Lumen", "LUMEN"];
-	var plant3ans = document.getElementById("textP3").value;
+     var plant3array = ["thylakoid lumen", "lumen"];
+	var plant3ans = document.getElementById("textP3").value.toLowerCase();
 	if (plant3array.includes(plant3ans)) {
 		document.getElementById("textP3").style.borderWidth = "thick";   document.getElementById("textP3").style.borderStyle = "solid";     document.getElementById("textP3").style.borderColor = CBgreen;
 	}
@@ -119,7 +110,7 @@ function checkAnswers() {
     //PLANT IMAGE MATCHING BELOW
     //SPOT 1
     let img1a = document.getElementById("light1");
-    if ((document.getElementById("div1").contains(img1a)) || 
+    if ((document.getElementById("div1").contains(img1a)) ||
 	   (document.getElementById("div7").contains(img1a))) {
         // Spot 1 True
         img1a.style.borderWidth = "thick";    img1a.style.borderStyle = "solid";     img1a.style.borderColor = CBgreen;
@@ -218,7 +209,7 @@ function checkAnswers() {
 
     //SPOT 7
 	let img7a = document.getElementById("light2");
-    if ((document.getElementById("div1").contains(img7a)) || 
+    if ((document.getElementById("div1").contains(img7a)) ||
 	   (document.getElementById("div7").contains(img7a))) {
         // Spot 1 True
         img7a.style.borderWidth = "thick";    img7a.style.borderStyle = "solid";     img7a.style.borderColor = CBgreen;
@@ -640,20 +631,14 @@ function checkAnswers() {
 
     // Animal Input Text Boxes
     // Getting the values:
-    var inputText1 = document.getElementById("textA1").value;
-    var inputText2 = document.getElementById("textA2").value;
-    var inputText3 = document.getElementById("textA3").value;
+    var inputText1 = document.getElementById("textA1").value.toLowerCase();
+    var inputText2 = document.getElementById("textA2").value.toLowerCase();
+    var inputText3 = document.getElementById("textA3").value.toLowerCase();
 
     // The array for the multiple answers text box  1.
-    var txt1array = [ "Inner Membrane",
-        "Inner membrane",
+    var txt1array = [
         "inner membrane",
-        "inner Membrane",
-        "InnerMembrane",
-        "innermembrane",
-        "INNERMEMBRANE",
-        "innerMembrane",
-        "Innermembrane",
+        "innermembrane"
         ];
     let array1Size = txt1array.length;
     let textboxA1 = document.getElementById("textA1");
@@ -671,7 +656,7 @@ function checkAnswers() {
     }
 
     // The array for the multiple answers text box 2.
-    var txt2array = [ "matrix", "Matrix", "MATRIX"];
+    var txt2array = ["matrix"];
     var array2Size = txt2array.length;
     let textboxA2 = document.getElementById("textA2");
     var j;
@@ -689,16 +674,8 @@ function checkAnswers() {
 
     // The array for the multiple answers text box 2.
     var txt3array = [ "intermembrane space",
-        "Intermembrane Space",
-        "Intermembrane space",
-        "INTERMEMBRANE SPACE",
-        "intermembrane Space",
         "intermembranespace",
-        "interMembrane",
-        "IntermembraneSpace",
-        "Intermembranespace",
-        "INTERMEMBRANESPACE",
-        "Inter Membrane Space",
+        "intermembrane",
         "inter membrane space"];
     var array3Size = txt3array.length;
     let textboxA3 = document.getElementById("textA3");
