@@ -58,7 +58,7 @@ function checkAnswers() {
       "thylakoid Membrane",
       "THYLAKOID MEMBRANE"];
 	// -> console.log(plant1array[0]);
-	var plant1ans = document.getElementById("textP1").value;
+	var plant1ans = document.getElementById("textP1").value.toLowerCase();
 	if (plant1array.includes(plant1ans)) {
 		document.getElementById("textP1").style.borderWidth = "thick";   document.getElementById("textP1").style.borderStyle = "solid";     document.getElementById("textP1").style.borderColor = CBgreen;
 	}
@@ -70,7 +70,7 @@ function checkAnswers() {
     var plant2array = ["stroma",
       "Stroma",
       "STROMA"];
-	var plant2ans = document.getElementById("textP2").value;
+	var plant2ans = document.getElementById("textP2").value.toLowerCase();
 	if (plant2array.includes(plant2ans)) {
 		document.getElementById("textP2").style.borderWidth = "thick";   document.getElementById("textP2").style.borderStyle = "solid";     document.getElementById("textP2").style.borderColor = CBgreen;
 	}
@@ -83,7 +83,7 @@ function checkAnswers() {
       "Thylakoid Lumen",
       "THYLAKOID LUMEN",
 	  "lumen", "Lumen", "LUMEN"];
-	var plant3ans = document.getElementById("textP3").value;
+	var plant3ans = document.getElementById("textP3").value.toLowerCase();
 	if (plant3array.includes(plant3ans)) {
 		document.getElementById("textP3").style.borderWidth = "thick";   document.getElementById("textP3").style.borderStyle = "solid";     document.getElementById("textP3").style.borderColor = CBgreen;
 	}
