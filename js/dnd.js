@@ -548,7 +548,7 @@ function checkAnswers() {
     }
     else{
         document.getElementById("h20Fuse").style.borderWidth = "thick";
-        document.getElementById("h20Fuse").style.borderStyle = "solid";
+        document.getElementById("h20Fuse").style.borderStyle = "dashed";
         document.getElementById("h20Fuse").style.borderColor = CByellow;
   }
   // Animal Element 13
@@ -565,7 +565,7 @@ function checkAnswers() {
   }
   else{
     document.getElementById("tca").style.borderWidth = "thick";
-    document.getElementById("tca").style.borderStyle = "solid";
+    document.getElementById("tca").style.borderStyle = "dashed";
     document.getElementById("tca").style.borderColor = CByellow;
   }
 
@@ -604,7 +604,7 @@ function checkAnswers() {
   }
   else{
     document.getElementById("atpSynthese2").style.borderWidth = "thick";
-    document.getElementById("atpSynthese2").style.borderStyle = "solid";
+    document.getElementById("atpSynthese2").style.borderStyle = "dashed";
     document.getElementById("atpSynthese2").style.borderColor = CByellow;
   }
 
