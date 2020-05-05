@@ -3,14 +3,23 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="CSS/styles.css">
 	</head>
-	
+
 	<body>
 		<div>
 			<!--	Show User what has changed... Also testing-->
 			<center>
-				<div id="cbox1" style="border-style: solid;  border-width: thick; border-color: green; width: 45px; height: 45px; display: inline-block; font-size: 9px">Right</div>
-				<div id="cbox2" style="border-style: dashed;  border-width: thick; border-color: gold; width: 45px; height: 45px; display: inline-block; font-size: 9px">Close</div>
-				<div id="cbox3" style="border-style: dotted;  border-width: thick; border-color: red; width: 45px; height: 45px; display: inline-block; font-size: 9px">Wrong</div>
+				<div class="cbbox" id="cbox1" style="border-style: solid;   border-width: thick; border-color: green; width: 45px; height: 45px; display: inline-block; font-size: 9px">
+          Correct
+            <span class="tooltiptext">Element is in correct spot</span> <!--This is hiden until user hovers box -->
+        </div>
+				<div class="cbbox" id="cbox2" style="border-style: dashed;  border-width: thick; border-color: gold;  width: 45px; height: 45px; display: inline-block; font-size: 9px">
+          Close
+          <span class="tooltiptext">Element is in correct Cell.<br> Wrong spot</span> <!--This is hiden until user hovers box -->
+        </div>
+				<div class="cbbox" id="cbox3" style="border-style: dotted;  border-width: thick; border-color: red;   width: 45px; height: 45px; display: inline-block; font-size: 9px">
+          Wrong
+          <span class="tooltiptext">Element is in wrong Cell.</span> <!--This is hiden until user hovers box -->
+        </div>
 			</center>
 			<!-- MAIN STAGE -->
 			<div id="stage" style="margin: 10px 0px 10px 0px">
@@ -111,19 +120,19 @@
 					<div class="box" draggable="true" id="tca" style="background-image: url('images/tca.png')"><span></span></div>
 				</div>
 			</div>
-			
-			
+
+
 			<!-- BREATHE & CB BUTTONS -->
 			<div>
 				<button class="button" id="breatheButton" style="background-color: teal; margin: 0px 10px 0px 39%; float: left" onClick="checkAnswers()">BREATHE</button>
-				<button class="button" id="CBbutton" style="background-color: black; float:left" onClick="CB()"><p >Color Blind Mode</p></button>
+				<button class="button" id="CBbutton" style="background-color: black; float:left; font-size: 12px" onClick="CB()"><p >Color Blind Mode</p></button>
 			</div>
-			
+
 			<!-- RESET BUTTON -->
 			<div>
 				<button class="button" id="resetButton" style="background-color:darkgray; margin: 10px 0px 0px 43%" onClick="resetPage()">RESET</button>
 			</div>
-			
+
 			<!-- PLANT CELL -->
 			<div id="container1" style="background-image: url('images/PlantCellBG-01.png'); background-size: 100%">
 				<div id="div1" style="position: absolute; top: 98px; left: 133px">
@@ -177,7 +186,7 @@
 					<option value="Low">Low</option>
 				</select>
 			</div>
-			
+
 			<!--              ANIMAL CELL             -->
 			<!-- Drag & Drop Elements -->
 			<div id="container2" style="background-image: url('images/AnimalCellBG_V2.png'); background-size: 100%">
@@ -247,7 +256,7 @@
 			</div>
 		</div>
 
-		
+
 		<script src="js/dnd.js"></script>
 	</body>
 </html>
